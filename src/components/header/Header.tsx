@@ -1,14 +1,16 @@
 import * as React from 'react';
 
-export interface IAppProps {
+export interface IHeaderProps {
 }
 
-export default class App extends React.Component<IAppProps> {
-  public render() {
+const Header: React.FunctionComponent<IHeaderProps> = (props) => {
+
     return (
-      <div>
-        
-      </div>
+        <div>
+
+        </div>
     );
-  }
+
 }
+
+export default Header;
