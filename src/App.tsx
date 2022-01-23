@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import './App.css';
+import Header from './components/header/Header';
 
 import { Note } from './models/note.model';
 
@@ -15,12 +16,9 @@ function App() {
   }]);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>react typescript notes-application</h1>
-      </header>
-
-    </div>
+    <>
+      <Header />
+    </>
   );
 }
 
