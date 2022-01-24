@@ -10,14 +10,12 @@ import { Note } from './models/note.model';
 function App() {
 
   const [notes, setNotes] = useState<Note[]>([{
-    id: (new Date).toString(),
+    id: (new Date()).toString(),
     title: "Meetings",
     text: 'Schedule meeting with UI/UX Team',
-    color: 'black',
-    date: (new Date).toString()
+    color: '#F8F8FF',
+    date: (new Date()).toString()
   }]);
-
-  console.log(notes)
 
   return (
     <>
@@ -25,7 +23,7 @@ function App() {
       <Container className='mt-5'>
         <Row>
           <Col>
-            <NotesList notes={notes} />
+            <NotesList notes={notes} setNotes={setNotes} />
           </Col>
         </Row>
       </Container>
