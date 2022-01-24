@@ -1,14 +1,18 @@
 import * as React from 'react';
+import { Note } from '../../models/note.model';
 
-export interface IAppProps {
+export interface INotesProps {
+    note: Note
 }
 
-export default class App extends React.Component<IAppProps> {
-    public render() {
-        return (
-            <div>
+const Notes: React.FC<INotesProps> = (props) => {
 
-            </div>
-        );
-    }
+    return (
+        <div>
+            <h2>Note Card</h2>
+        </div>
+    );
+
 }
+
+export default Notes;
