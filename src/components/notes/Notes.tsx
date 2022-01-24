@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 import { Note } from '../../models/note.model';
 import Button from 'react-bootstrap/Button';
 
-export interface INotesProps {
+interface INotesProps {
     note: Note,
     handleDelete: (id: string) => void
 }
@@ -12,7 +12,7 @@ const Notes: React.FC<INotesProps> = ({ note, handleDelete }) => {
 
     return (
         <div>
-            <Card style={{ backgroundColor: note.color }}>
+            <Card style={{ backgroundColor: note.color, marginBottom: '8px' }}>
                 <Card.Body>
                     <Card.Title>{note.title}</Card.Title>
                     <Card.Text>{note.text}</Card.Text>

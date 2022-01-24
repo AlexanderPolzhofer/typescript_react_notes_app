@@ -3,10 +3,10 @@ import { Container, Navbar } from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export interface IHeaderProps {
+interface IHeaderProps {
 }
 
-const Header: React.FunctionComponent<IHeaderProps> = (props) => {
+const Header: React.FC<IHeaderProps> = (props) => {
 
     return (
         <div>
